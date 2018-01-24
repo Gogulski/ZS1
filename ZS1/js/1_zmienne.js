@@ -26,3 +26,4 @@ var mnożenie = x * y;
 var modulo = x % y;
 
 console.log(modulo);
+
