@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+    <link rel="stylesheet" href="Style/form.css"
+</head>
+<body>
+   <!--
+   >action - atrybut
+   >get - przy wysyłaniu krótkich formularzy - małych ilości danych ( mało bezpieczne ). Wartości pól formularza są pokazywane w adresie URL. Nie stosować w przypadku wysyłania danych do bazy.
+   >post - przy wysyłaniu długich plików - duże ilości danych. Zalecane przy wysyłaniu haseł i danych do bazy. Dane są wysyłane w nagłówkach HTTP. Dane nie będą widoczne w adresie URL.
+   >Get jest szybszy od Post
+
+   >action, type, name - atrybut
+   >text,get,post - wartość
+   >input - element
+   -->
+    <form action="szymon.html" method="get" id="form1">
+       <fieldset>
+               <legend>Dane: </legend>
+            <input type="text" name="imie" size="20" maxlength="5" autofocus placeholder="Janusz" id="imie"> Imię<br><br>
+
+            <input type="text" name="nazwisko" size="20" maxlength="5" placeholder="Kowal" id="nazwisko"> Nazwisko<br><br>
+
+            <input type="text" name="szkola" placeholder="ZS1" size="3" readonly id="szkola"> Szkoła<br><br>
+
+            <input type="password" name="haslo" id="haslo" maxlength="20" size="5"> Hasło<br><br>
+
+            <input type="reset">
+            <input type="submit" id="przycisk" value="Zatwierdź">
+       </fieldset>
+    </form>
+    <hr>
+    <form id="form2" action="sandra.php">
+        <h3>Wybierz kolor</h3><br>
+       <input type="radio" name="kolor" value="biały">Biały<br>
+       <input type="radio" name="kolor" value="czerwony" checked>Czerowny<br>
+       <input type="radio" name="kolor" value="zielony">Zielony<br>
+       <input type="submit" name="przycisk2">
+
+
+
+
+    </form>
+    <hr>
+        <form action="adrian.html" method="get" id="form3">
+       <fieldset>
+         <legend>Wybierz imię: </legend>
+               <input type="radio" name="imie" value="michal" checked>Michał<br>
+               <input type="radio" name="imie" value="asia">Asia<br>
+               <input type="radio" name="imie" value="tymek">Tymek<br>
+               <input type="radio" name="imie" value="natalia">Natalia<br><br>
+            <input type="reset">
+            <input type="submit" id="przycisk3" value="Wyślij imię">
+       </fieldset>
+    </form>
+    <hr>
+    <form>
+        <input type="checkbox" value="rower" name="pojazd1">Mam rower
+        <input type="checkbox" value="samochod" name="pojazd2">Mam samochód
+        <input type="checkbox" value="samolot" name="pojazd3">Mam samolot<br>
+        <input type="submit" name="przycisk3">
+    </form>
+    <hr>
+    <form>
+        <input type="color" name="color">
+        <input type="submit" name="przycisk4">
+    </form>
+    <hr>
+</body>
+</html>
