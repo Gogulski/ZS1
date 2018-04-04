@@ -1,0 +1,44 @@
+body {
+    font-family: Arial. Verdana;
+    color: darkred;
+}
+
+table {
+    width: 600px;
+
+}
+
+th, td {
+    padding: 7px 10px 10px 10px;
+    /*Góra, prawo, dół, lewo*/
+}
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 90%;
+    border-bottom: 2px solid black;
+    border-top: 1px solid gray;
+    text-align: left;
+}
+
+.even {
+    background-color: lightsalmon;
+}
+
+.java, .js, .zarobki {
+    background-color: lightskyblue;
+}
+
+.js {
+    background-color: lightskyblue;
+}
+
+
+td:hover {
+      background-color: hotpink;
+    }
+
+.money {
+    text-align: right;
+}
