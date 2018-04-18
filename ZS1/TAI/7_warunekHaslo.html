@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasło</title>
+</head>
+<body>
+  <div id="kolor"></div>
+   <script>
+    var haslo = prompt('Podaj hasło');
+    var dlugosc = haslo.length;
+    var dl;
+       console.log(dlugosc);
+
+       if (dlugosc <= 0){
+    dl = 'Błędne';
+       }else if (dlugosc > 0 && dlugosc <=4){
+    dl = 'Krótkie';
+       }else if (dlugosc >4 && dlugosc <=8){
+    dl = 'Średnie';
+       }else{
+    dl = 'Długie';
+       }
+
+       switch(dl){
+           case 'Błędne':
+               kolor.style.color = 'red';
+               break;
+           case 'Krótkie':
+               kolor.style.color = 'yellow';
+               break;
+           case 'Średnie':
+               kolor.style.color = 'orange';
+               break;
+           case 'Długie':
+               kolor.style.color = 'green';
+               break;
+       }
+
+       kolor.innerHTML = 'Hasło ma ' + dlugosc + ' liter i jest: ' + dl;
+    </script>
+
+</body>
+</html>

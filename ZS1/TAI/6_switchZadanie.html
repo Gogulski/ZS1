@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polska/Niemcy/Rosja</title>
+</head>
+<body>
+  <script>
+        var kraj = prompt('Podaj kraj', 'Polska/Niemcy/Rosja');
+
+        switch (kraj) {
+          case 'Polska':
+                  var pilka = prompt('Czy lubisz piłkę nożną', 'Tak/Nie')
+                  document.write('Pierwszą stolicą Polski było Gniezno<br>');
+              if (pilka == 'Tak'){
+                  document.write('Najlepszą drużyną w Polsce jest Lech Poznań');
+              }else{
+                document.write('Nie lubisz piłki nożnej');
+              }
+              break;
+
+          case 'Niemcy':
+                  var pilka = prompt('Czy lubisz piłkę nożną', 'Tak/Nie')
+                  document.write('Stolicą Niemiec jest Berlin<br>');
+              if (pilka == 'Tak'){
+                  document.write('Najlepszą drużyną w Niemczech jest Bayern Monachium');
+              }else{
+                document.write('Nie lubisz piłki nożnej');
+              }
+              break;
+
+          case 'Rosja':
+                  var pilka = prompt('Czy lubisz piłkę nożną', 'Tak/Nie')
+                  document.write('Stolicą Rosji jest Moskwa<br>');
+              if (pilka == 'Tak'){
+                  document.write('Najlepszą drużyną w Rosji jest Zenit Sankt-Petersburg');
+              }else{
+                document.write('Nie lubisz piłki nożnej');
+              }
+        }
+
+    </script>
+
+</body>
+</html>
