@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 3</title>
+</head>
+<body>
+       <script>
+           document.write('<input type="radio" checked name="sort" id=r>ROSNĄCO');
+           document.write('<input type="radio" checked name="sort" id=m>MALEJĄCO<br>');
+
+           function spr(){
+               if (r.checked == true)
+                   alert('Rosnąco');
+           }
+
+        var poczatek = Number(prompt("Podaj początek przedziału"));
+        var koniec = Number(prompt("Podaj koniec przedziału"));
+            for (var i=poczatek; i<=koniec; i++){
+                document.write(i + ' ');
+            } else if (m.ckecked == true)
+                for (var i=koniec; i>=poczatek; i++){
+                document.write(i + ' ');
+
+           r.addEventListener('click', spr);
+        </script>
+</body>
+</html>
