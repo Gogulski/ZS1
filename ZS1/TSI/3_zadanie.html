@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+</head>
+<body>
+    <form name="form1">
+        <input type="button" value='WP'>
+        <input type="button" value='Onet'>
+        <input type="button" value='Gmail'>
+    </form>
+    <script>
+        function stronaWP() {
+            document.forms['form1'].action = "https://www.wp.pl"
+            document.forms['form1'].submit();
+        }
+        function stronaOnet() {
+            document.forms['form1'].action = "https://www.onet.pl"
+            document.forms['form1'].submit();
+        }
+        function stronaGmail() {
+            document.forms['form1'].action = "https://www.gmail.com"
+            document.forms['form1'].submit();
+        }
+    </script>
+</body>
+</html>
