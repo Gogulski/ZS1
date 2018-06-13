@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie Domowe</title>
+</head>
+<body>
+      <div id="strona">
+       <form name="form1">
+        <input type="button" value="Onet" id="onet">
+        <input type="button" value="Interia" id="interia">
+        <input type="button" value="WP" id="wp">
+    </form>
+    </div>
+    <script>
+    function przejdzOnet()  {
+        document.forms['form1'].action = 'http://www.onet.pl';
+        document.forms['form1'].submit();
+    }
+    function przejdzInteria()  {
+        document.forms['form1'].action = 'http://www.interia.pl';
+        document.forms['form1'].submit();
+    }
+    function przejdzWp()  {
+        document.forms['form1'].action = 'http://www.wp.pl';
+        document.forms['form1'].submit();
+    }
+    onet.addEventListener('click', przejdzOnet);
+    interia.addEventListener('click', przejdzInteria);
+    wp.addEventListener('click', przejdzWp);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasła</title>
+</head>
+<body>
+   <center>
+    <form name="form1">
+       <br>
+        Podaj hasło:  <input type="password" id="pass1"><br><br>
+        Powtórz hasło: <input type="password" id="pass2"><br><br>
+
+        <button name="anuluj" id="anuluj" >Anuluj</button>
+        <button name="zatwierdz" id="zapisz" type="button" disabled>Zatwierdź</button>
+
+    </form></center>
+
+    <script>
+
+    function anulujHaslo() {
+        document.forms['form1'].action = './anuluj.html';
+
+    }
+
+    function zapiszHaslo(){
+        document.forms['form1'].action = './zapisz.html';
+    }
+
+    function odblokujHaslo(){
+        if (/*pass1.value != '' && pass2.value != '' && */ pass1.value.length >= 8 && pass1.value == pass2.value){
+            zapisz.disabled = false;
+        }else{
+            zapisz.disabled = true;
+        }
+    }
+
+    anuluj.addEventListener('click', anulujHaslo);
+    zapisz.addEventListener('click', zapiszHaslo);
+    pass1.addEventListener('input', odblokujHaslo);
+    pass2.addEventListener('input', odblokujHaslo);
+
+    </script>
+</body>
+</html>

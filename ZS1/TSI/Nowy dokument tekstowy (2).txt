@@ -1,0 +1,4 @@
+#strona {
+    background-color: darkorange;
+    width: 200px;
+}

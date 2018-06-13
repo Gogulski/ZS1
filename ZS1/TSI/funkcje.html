@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funkcje</title>
+</head>
+    <style>
+        input {
+            text-align: center;
+        }
+    </style>
+<body>
+    <input type="number" name="a" id="a">
+    <select id='dzialanie' name='dzialanie'>
+        <option value='+'>+</option>
+        <option value='-'>-</option>
+    </select>
+    <input type="number" name="b" id="b">=
+    <input type="number" name="wynik" id="wynik" disabled>
+
+    <br><br>
+    <input type="button" name="calculator" id="calc" value="Razem">
+    <script>
+    function alarm() {
+        let dzialanie = document.getElementById('dzialanie').value;
+        let a = Number.getElementById('a').value;
+        let b = Number.getElementById('b').value;
+        let wynik = document.getElementById('wynik');
+        if (dzialanie == '+'){
+            var oblicz= a+b;
+    }
+        let wynik = document.addEventListener()
+        wynik.addEventListener('click', calc);
+    }
+        alarmp.addEventListener('click', calc);
+    </script>
+</body>
+</html>
